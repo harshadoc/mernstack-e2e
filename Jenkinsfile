@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Git Pulling') {
             steps {
-                git branch: 'master', credentialsId:'git-creds', url: 'https://github.com/harshadoc/mernstack-e2e.git'
+                git branch: 'master', url: 'https://github.com/harshadoc/mernstack-e2e.git'
             }
         }
         stage('Init') {
